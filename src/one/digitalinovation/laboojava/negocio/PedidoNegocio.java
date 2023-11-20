@@ -100,6 +100,16 @@ public class PedidoNegocio {
     /**
      * Lista todos os pedidos realizados.
      */
-    //TODO Método de listar todos os pedidos
+    public void listarTodos() {
+
+        if (bancoDados.getPedidos().length == 0) {
+            System.out.println("Não existem produtos cadastrados");
+        } else {
+
+            for (Pedido pedido: bancoDados.getPedidos()) {
+                System.out.println(pedido.toString());
+            }
+        }
+    }
 
 }
