@@ -47,6 +47,10 @@ public abstract class Produto {
         this.quantidade = quantidade;
     }
 
+    public double calcularFrete() {
+        return 10.0;
+    }
+
     /**
      * Calcula o preço do frete para os produtos comprados. Este cálculo pode
      * variar de acordo com o produto

@@ -50,6 +50,11 @@ public class Pedido {
         this.total = total;
     }
 
+    /**
+     * método auxiliar que percorre todos os produtos da lista e salva em uma variavel produtos, e passa esses valores
+     * ao metodo toString
+     */
+
     private String getProdutosComprados() {
 
         StringBuilder produtos = new StringBuilder();
