@@ -54,7 +54,14 @@ public class ProdutoNegocio {
      * @param codigo Código de cadastro do produto
      */
     public void excluir(String codigo) {
-        //TODO Implementar a exclusão
+        int valor = 0;
+        for (Produto produto: bancoDados.getProdutos()) {
+            valor ++;
+            if (produto.getCodigo().equalsIgnoreCase(codigo)) {
+                bancoDados.removerProduto(valor-1);
+            }
+        }
+
     }
 
     /**
