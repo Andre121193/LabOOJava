@@ -7,7 +7,7 @@ public class Caderno extends Produto {
      */
     private Tipo tipo;
 
-    public Caderno(Tipo tipo) {
+    public Caderno() {
         this.tipo = tipo;
     }
 
