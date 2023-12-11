@@ -2,6 +2,9 @@ package one.digitalinovation.laboojava.entidade;
 
 public class Caderno extends Produto {
 
+    /**
+     * Quantas matérias o caderno possui
+     */
     private Tipo tipo;
 
     public Caderno(Tipo tipo) {
@@ -18,6 +21,15 @@ public class Caderno extends Produto {
 
     @Override
     public double calcularFrete() {
-        return 0;
+        return (getPreco() * getQuantidade()) * (1 + tipo.getFator());
+    }
+
+    @Override
+    public String toString() {
+        return "Livro{" +
+                "tipo do caderno='" + getTipo() + '\'' +
+                ", codigo='" + getCodigo() + '\'' +
+                ", preço='" + getPreco() + '\'' +
+                '}';
     }
 }
