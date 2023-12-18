@@ -77,7 +77,9 @@ public class Start {
                     produtoNegocio.salvar(caderno);
                     break;
                 case "4":
-                    //TODO Excluir Caderno
+                    System.out.println("Digite o código do caderno");
+                    String codigoCaderno = LeitoraDados.lerDado();
+                    produtoNegocio.excluir(codigoCaderno);
                     break;
                 case "5":
                     Pedido pedido = LeitoraDados.lerPedido(banco);
