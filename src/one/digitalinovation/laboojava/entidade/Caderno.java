@@ -1,5 +1,7 @@
 package one.digitalinovation.laboojava.entidade;
 
+import one.digitalinovation.laboojava.entidade.constantes.Tipo;
+
 public class Caderno extends Produto {
 
     /**

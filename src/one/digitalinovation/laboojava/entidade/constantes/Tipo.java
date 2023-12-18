@@ -1,4 +1,4 @@
-package one.digitalinovation.laboojava.entidade;
+package one.digitalinovation.laboojava.entidade.constantes;
 
 public enum Tipo {
     M2 (2),

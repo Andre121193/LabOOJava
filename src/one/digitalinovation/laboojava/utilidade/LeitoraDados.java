@@ -3,6 +3,7 @@ package one.digitalinovation.laboojava.utilidade;
 import one.digitalinovation.laboojava.basedados.Banco;
 import one.digitalinovation.laboojava.entidade.*;
 import one.digitalinovation.laboojava.entidade.constantes.Genero;
+import one.digitalinovation.laboojava.entidade.constantes.Tipo;
 import one.digitalinovation.laboojava.negocio.ProdutoNegocio;
 
 import java.util.Optional;
